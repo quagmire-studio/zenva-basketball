@@ -15,6 +15,7 @@ public class Ball : MonoBehaviour
 
     public void ActivateTrail()
     {
-        trailObject.SetActive(true);
+        // This effect looks terrible so I'll just disable it... :(
+        // trailObject.SetActive(true);
     }
 }
