@@ -423,7 +423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96e2495ded4e9d44c970a3efd3656b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 731652522}
+  ball: {fileID: 731652528}
   playerCamera: {fileID: 241466964}
   ballDistance: 2.25
   ballThrowingForce: 550
@@ -441,6 +441,7 @@ GameObject:
   - component: {fileID: 731652526}
   - component: {fileID: 731652525}
   - component: {fileID: 731652524}
+  - component: {fileID: 731652528}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -539,6 +540,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731652522}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &731652528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731652522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 998aa99d7be25624ba40e986611001e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trailObject: {fileID: 2061546832}
 --- !u!1001 &848254331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1321,7 +1335,7 @@ GameObject:
   - component: {fileID: 2061546835}
   - component: {fileID: 2061546834}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: Trial Particle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1488,7 +1502,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -1541,7 +1555,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.4
       minScalar: 5
       maxCurve:
         serializedVersion: 2
